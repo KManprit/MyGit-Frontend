@@ -1,0 +1,102 @@
+.issues-section {
+  width: 100%;
+  padding: 20px;
+  background-color: #1e293b;
+  color: whitesmoke;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.issues-section h4 {
+  margin-bottom: 10px;
+}
+
+.issues-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.issues-section li {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 10px;
+}
+
+.issues-section h5 {
+  font-size: 18px;
+  margin: 0;
+  color: #38bdf8;
+}
+
+.issues-section p {
+  margin: 5px 0;
+  color: #d1d5db;
+}
+
+/* Styling for the form container */
+.create-issue-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Label Styling */
+.create-issue-form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+/* Input and textarea styling */
+.create-issue-form input,
+.create-issue-form select,
+.create-issue-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.create-issue-form input:focus,
+.create-issue-form select:focus,
+.create-issue-form textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+}
+
+/* Styling for the submit button */
+.create-issue-form button {
+  background-color: #38bdf8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.create-issue-form button:disabled {
+  background-color: #b0d9f2;
+  cursor: not-allowed;
+}
+
+.create-issue-form button:hover {
+  background-color: #0ea5e9;
+}
+
+/* Optional: Style for form fields in a column layout */
+.create-issue-form .input-field {
+  margin-bottom: 15px;
+}

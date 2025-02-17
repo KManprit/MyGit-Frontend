@@ -1,0 +1,113 @@
+/* Page background */
+body {
+    background-color: #0d1117; /* GitHub dark background */
+    color: #c9d1d9; /* Light text */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the form */
+.create-repo-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;  /* Center align */
+}
+
+
+.form-box {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Heading */
+.create-repo-container h2 {
+    font-size: 20px;
+    color: #e6edf3; /* Soft white */
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+/* Form Group (For Better Spacing & Alignment) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Adds spacing between input fields */
+}
+
+/* Labels */
+.create-repo-container label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px; /* Adds gap between label and input */
+    color: #c9d1d9;
+}
+
+/* Input fields */
+.create-repo-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #c9d1d9;
+    outline: none;
+    transition: border 0.2s ease-in-out;
+}
+
+.create-repo-container input[type="text"]:focus {
+    border-color: #58a6ff; /* Blue focus border */
+}
+
+.create-repo-container input[type="text"]::placeholder {
+    color: #8b949e;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+/* Submit Button */
+.create-repo-container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #238636; /* GitHub green */
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background 0.2s ease-in-out;
+}
+
+.create-repo-container button:hover {
+    background-color: #2ea043;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .create-repo-container {
+        width: 90%;
+    }
+}
