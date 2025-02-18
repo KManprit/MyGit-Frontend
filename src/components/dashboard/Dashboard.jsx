@@ -15,7 +15,7 @@ const Dashboard = () => {
 
         const fetchRepositories = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/repo/user/${userId}`);
+                const response = await fetch(`http://16.171.78.108:3000/repo/user/${userId}`);
                 const data = await response.json();
                 console.log("Fetched repositories data:", data);
                 setRepositories(data.repositories || []);
@@ -26,7 +26,7 @@ const Dashboard = () => {
 
         const fetchSuggestedRepositories = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/repo/all`);
+                const response = await fetch(`http://16.171.78.108:3000/repo/all`);
                 const data = await response.json();
                 console.log("Fetched suggested repositories:", data);
                 setSuggestedRepositories(data || []);
@@ -57,7 +57,7 @@ const Dashboard = () => {
         if (!confirmDelete) return;
     
         try {
-            const response = await fetch(`http://localhost:3000/repo/delete/${repoId}`, {
+            const response = await fetch(`http://16.171.78.108:3000/repo/delete/${repoId}`, {
                 method: "DELETE",
             });
     

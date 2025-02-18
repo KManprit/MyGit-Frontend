@@ -13,7 +13,7 @@ const CreateIssueForm = () => {
   useEffect(() => {
     const fetchRepositories = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/repo/all");
+        const response = await axios.get("http://16.171.78.108:3000/repo/all");
         setRepositories(response.data);
       } catch (error) {
         console.error("Error fetching repositories", error);
@@ -27,7 +27,7 @@ const CreateIssueForm = () => {
   useEffect(() => {
     const fetchIssues = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/issue/all"); // Adjust this API as needed
+        const response = await axios.get("http://16.171.78.108:3000/issue/all"); 
         setIssues(response.data);
       } catch (error) {
         console.error("Error fetching issues", error);
@@ -62,7 +62,7 @@ const CreateIssueForm = () => {
         userId, // Include userId in the request body
       };
 
-      const response = await axios.post("http://localhost:3000/issue/create", newIssue, {
+      const response = await axios.post("http://16.171.78.108:3000/issue/create", newIssue, {
         headers: {
           "Content-Type": "application/json",
         },

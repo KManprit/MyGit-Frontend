@@ -12,7 +12,7 @@ const Issues = ({repositoryId})=>{
     useEffect(()=>{
         const fetchIssues = async () => {
             try{
-                const response = await axios.get(`http://localhost:3000/issue/all`);
+                const response = await axios.get(`http://16.171.78.108:3000/issue/all`);
                 setIssues(response.data);
             }catch(err){
                 console.error("Error fetching issues:", err.message);
@@ -26,7 +26,7 @@ const Issues = ({repositoryId})=>{
     // Create a new issue
     const createIssue  = async () =>{
         try{
-            const response = await axios.post(`http://localhost:3000/issue/create`, {
+            const response = await axios.post(`http://16.171.78.108:3000/issue/create`, {
                 title,
                 description,
                 repository: repositoryId,
@@ -47,7 +47,7 @@ const Issues = ({repositoryId})=>{
 
         try{
             const response =  await axios.put(
-                `http://localhost:3000/issue/update/${selectedIssue._id}`, 
+                `http://16.171.78.108:3000/issue/update/${selectedIssue._id}`, 
                 {
                     
                     title,
@@ -75,7 +75,7 @@ const Issues = ({repositoryId})=>{
       // Delete an issue
       const deleteIssue = async (id) => {
         try {
-            await axios.delete(`http://localhost:3000/issue/delete/${id}`);
+            await axios.delete(`http://16.171.78.108:3000/issue/delete/${id}`);
             setIssues(issues.filter((issue) => issue._id !== id)); // Remove from state
           } catch (err) {
             console.error("Error deleting issue:", err.message);

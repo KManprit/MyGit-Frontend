@@ -22,7 +22,7 @@ const Profile = () => {
       if (userId) {
         try {
           const response = await axios.get(
-            `http://localhost:3000/userProfile/${userId}`
+            `http://16.171.78.108:3000/userProfile/${userId}`
           );
           setUserDetails(response.data);
           setRepositoryId(response.data.repositoryId); // Assuming user has a repositoryId

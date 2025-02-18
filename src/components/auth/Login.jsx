@@ -8,7 +8,7 @@ import logo from "../../assets/github-mark-white.svg";
 import { Link } from "react-router-dom";
 
 const Login = () => {
-  const { setCurrentUser } = useAuth(); // Moved this above useEffect
+  const { setCurrentUser } = useAuth(); 
 
   useEffect(() => {
     localStorage.removeItem("token");
@@ -25,7 +25,7 @@ const Login = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:3000/login", {
+      const res = await axios.post("http://16.171.78.108:3000/login", {
         email,
         password,
       });

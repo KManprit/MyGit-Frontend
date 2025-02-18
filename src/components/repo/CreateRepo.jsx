@@ -31,7 +31,7 @@ const CreateRepo = () => {
         }
 
         try {
-            const response = await axios.post("http://localhost:3000/repo/create", {
+            const response = await axios.post("http://16.171.78.108:3000/repo/create", {
                 owner,
                 name,
                 description,
@@ -42,7 +42,7 @@ const CreateRepo = () => {
 
             console.log("Repository Created:", response.data);
             alert("Repository Created Successfully!");
-            navigate("/profile");
+            navigate("/");
         } catch (error) {
             console.error("Error creating repository:", error);
             alert("Failed to create repository");
@@ -60,7 +60,7 @@ const CreateRepo = () => {
     //     try {
     //         const response = await axios.delete(`http://localhost:3000/repo/delete/${repoId}`, {
     //             headers: { "Content-Type": "application/json" },
-    //         });
+    //         });      http://16.171.78.108:3000
     
     //         console.log("Delete Response:", response.data);
     //         alert("Repository Deleted Successfully");

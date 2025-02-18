@@ -14,7 +14,7 @@ const DisplayIssues = ({ repositoryId }) => {
         // const response = await axios.get(`http://localhost:3000/issue/all`, {
         //   params: { repositoryId },
         // });
-        const response = await axios.get(`http://localhost:3000/issue/${repositoryId}`)
+        const response = await axios.get(`http://16.171.78.108:3000/issue/${repositoryId}`)
         setIssues(response.data);
       } catch (error) {
         setError("Error fetching issues");
